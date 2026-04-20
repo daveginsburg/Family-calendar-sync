@@ -93,7 +93,10 @@ Prevents SMTP issues:
 •	retry with backoff
 
 8. Scheduling
-   
+
+launchctl unload ~/Library/LaunchAgents/com.family.calendar.sync.plist 2>/dev/null
+launchctl load ~/Library/LaunchAgents/com.family.calendar.sync.plist
+
 Runs daily via launchd:
 <key>StartCalendarInterval</key>
 <dict>
